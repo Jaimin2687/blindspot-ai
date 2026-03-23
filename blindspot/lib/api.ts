@@ -11,7 +11,7 @@ export async function submitBlindspot(
   formData.append("strictness", strictness);
 
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 60000);
+  const timeoutId = setTimeout(() => controller.abort(), 120000); // Widen to 2 minutes
 
   let response;
   try {
