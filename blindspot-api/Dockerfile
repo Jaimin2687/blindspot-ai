@@ -10,8 +10,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose the default port (Hugging Face Spaces uses 7860, others use 8000)
-# We use an environment variable for PORT, defaulting to 8000
-ENV PORT=8000
+# We use an environment variable for PORT, defaulting to 7860
+ENV PORT=7860
 EXPOSE $PORT
 
 # Run the FastAPI server
