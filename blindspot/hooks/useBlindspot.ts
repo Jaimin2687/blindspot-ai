@@ -64,7 +64,7 @@ export function useBlindspot() {
           {
             type: "api_error",
             description:
-              "Could not reach the Blindspot server. Make sure the backend is running on port 8000.",
+              "Could not reach the Blindspot API server. Please ensure the backend URL is correctly configured.",
           },
         ],
       }));
